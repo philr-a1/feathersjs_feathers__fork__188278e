@@ -22,7 +22,7 @@
   ],
   "author": "Feathers contributors",
   "engines": {
-    "node": ">= 12"
+    "node": ">= 20"
   },
   "main": "dist/feathers",
   "types": "dist/feathers",
@@ -36,11 +36,12 @@
     "*.js"
   ],
   "scripts": {
-    "compile": "tsc",
+    "prepublish": "npm run compile",
+    "compile": "shx rm -rf lib/ && tsc",
     "version": "npm run build",
     "clean": "shx rm -rf dist/ && shx mkdir -p dist",
     "build": "npm run clean && npm run compile && npm run webpack",
-    "mocha": "mocha --config ../../.mocharc.json --recursive test/**/*.test.ts",
+    "mocha": "mocha --config ../../.mocharc.json --recursive test/**.test.ts test/**/*.test.ts",
     "test": "npm run build && npm run mocha",
     "webpack": "webpack --config webpack/feathers.js && webpack --config webpack/feathers.min.js && webpack --config webpack/core.js && webpack --config webpack/core.min.js"
   },

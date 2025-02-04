@@ -26,7 +26,7 @@
     "url": "https://github.com/feathersjs/feathers/issues"
   },
   "engines": {
-    "node": ">= 12"
+    "node": ">= 20"
   },
   "main": "lib/",
   "types": "lib/",
@@ -41,9 +41,9 @@
   ],
   "scripts": {
     "prepublish": "npm run compile",
-    "pack": "npm pack --pack-destination ../generators/test/build",
-    "compile": "shx rm -rf lib/ && tsc && npm run pack",
-    "test": "mocha --config ../../.mocharc.json --recursive test/**.test.ts test/**/*.test.ts"
+    "compile": "shx rm -rf lib/ && tsc",
+    "test": "npm run mocha",
+    "mocha": "mocha --config ../../.mocharc.json --recursive test/**.test.ts test/**/*.test.ts"
   },
   "directories": {
     "lib": "lib"

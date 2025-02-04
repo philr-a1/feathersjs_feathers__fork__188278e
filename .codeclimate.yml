@@ -1,4 +1,4 @@
-version: "2"         # required to adjust maintainability checks
+version: '2' # required to adjust maintainability checks
 checks:
   argument-count:
     config:
@@ -36,10 +36,8 @@ plugins:
     config:
       count_threshold: 4
 exclude_patterns:
-  - "**/test/*"
-  - "**/adapter-tests/*"
-  - "**/dist/*"
-  - "**/*.dist.js"
-  - "**/templates/*"
-  - "**/_**"
-  - "**/adapter-commons/src/sort.ts"
+  - '**/test/*'
+  - '**/dist/*'
+  - '**/*.dist.js'
+  - '**/templates/*'
+  - '**/_**'

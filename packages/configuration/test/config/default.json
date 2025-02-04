@@ -1,6 +1,0 @@
-{
-  "port": 3030,
-  "array": ["one", "two", "three"],
-  "deep": { "base": false },
-  "nullish": null
-}
