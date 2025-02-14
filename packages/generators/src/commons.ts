@@ -236,7 +236,7 @@ export const PRETTIERRC: PrettierOptions = {
   endOfLine: 'auto',
   jsxSingleQuote: false,
   quoteProps: 'as-needed'
-};
+}
 
 /*
  * Format a source file using Prettier. Will use the local configuration, the settings set in
