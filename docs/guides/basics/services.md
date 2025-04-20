@@ -62,7 +62,7 @@ For `setup` and `teardown` (which are only called once on application startup an
 - `path` - The path the service is registered on
 - `app` - The [Feathers application](./../../api/application.md)
 
-Usually those methods can be used for most API functionality but it is also possible to add your own [custom service methods](../../api/services.md#custom-methods).
+Usually those methods can be used for most API functionality but it is also possible to add your own [custom service methods](../../api/services.md#custom-methods). For information on how to apply validation to custom methods, see the [Custom Method Validation](../cli/validators.md#custom-method-validation) section.
 
 <BlockQuote type="info">
 
